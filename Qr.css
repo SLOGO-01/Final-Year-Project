@@ -1,0 +1,90 @@
+/* General Styling */
+/* body {
+    font-family: 'Poppins', sans-serif;
+    
+    margin: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+} */
+.content{
+    margin-top: 80px;
+    grid-column: 2;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    /* min-height: 100vh; */
+    /* align-items: center; */
+}
+/* Container */
+.contain {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    text-align: center;
+
+    h2{
+        margin-bottom: 15px;
+    }
+}
+
+/* Profile Card */
+.profile-card {
+    /* background: #e9f5ff; */
+    background: #fae8da;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+
+    h3 {
+        color: #d2691e;
+    }
+    
+    p {
+        color: #555;
+    }
+    
+}
+
+
+/* QR Code Section */
+#qr-container {
+    margin: 15px 0;
+    padding: 10px;
+    border: 2px dashed #d2691e;
+    display: inline-block;
+}
+
+/* Buttons */
+button {
+    background: #d2691e;
+
+    /* background: #007bff; */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    /* background: #0056b3; */
+    background: #b34700;
+}

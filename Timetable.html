@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timetable</title>
+    <link rel="stylesheet" href="Styling.css" />
+    <link href="https://api.fontshare.com/v2/css?f[]=outfit@100,200,300,400,500,600,700,800&display=swap"
+        rel="stylesheet" />
+
+        <script
+        src="https://kit.fontawesome.com/8d594bdedd.js"
+        crossorigin="anonymous"
+      ></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <p>Caf Connect</p>
+            <span>
+              <div class="Notification-Icon">
+                <img src="./Assets/Icons/notif.png" alt="Notification Icon" />
+              </div>
+              <div class="Profile-Image">
+                <img
+                  src="./Assets/Emergency Passport Semilogo.jpg"
+                  alt="Profile Icon"
+                />
+              </div>
+            </span>
+          </header>
+          
+        <nav class="side-nav">
+            <ul>
+              <li>
+                <a href="Student-Dashboard.html" >
+                  <div class="Profile-Image">
+                    <img
+                      src="./Assets/Emergency Passport Semilogo.jpg"
+                      alt="Profile Icon"
+                    />
+                  </div>
+                  <span>
+                    <p>Dashboard</p>
+                    <p class="user-name">Overcomer Tawose</p>
+                  </span>
+                </a>
+              </li>
+    
+              <li>
+                <a href="Qr-Code.html">
+                  <img
+                    class="nav-icon"
+                    src="./Assets/Icons/Qr code.png"
+                    alt="icon"
+                  />
+                  <p>Generate QR Code</p>
+                </a>
+              </li>
+              <li>
+                <a href="meal-card.html">
+                  <img class="nav-icon" src="./Assets/Icons/card.png" alt="icon" />
+                  <p>Meal Card</p>
+                </a>
+              </li>
+              <li>
+                <a href="Timetable.html" class="active">
+                  <img
+                    class="nav-icon"
+                    src="./Assets/Icons/18987773.png"
+                    alt="icon"
+                  />
+                  <p>Timetable</p>
+                </a>
+              </li>
+              <li>
+                <a href="History.html">
+                  <img
+                    class="nav-icon"
+                    src="./Assets/Icons/History1.png"
+                    alt="icon"
+                  />
+                  <p>History</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i
+                    class="nav-icon"
+                    class="fa-solid fa-arrow-right-from-bracket"
+                  ></i>
+                  <p>Log out</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+        <main class="Universal-content">
+
+          <h2>Semester Timetable</h2>
+          <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#" class="nav-item active" data-target="breakfast-lunch-supper">Standard Diet</a></li>
+                <li><a href="#" class="nav-item" data-target="special-diet">Special Diet</a></li>
+                <!-- <li><a href="#" class="nav-item" data-target=""></a></li> -->
+                <div class="nav-highlight"></div> 
+            </ul>
+        </nav>
+        <div class="content">
+            <div id="breakfast-lunch-supper" class="content-section active">🏠 Breakfast & Lunch & Supper Menu
+              <h2 class="Weekday">Monday</h2>
+              <div class="Meal-Option"><p>Breakfast</p> <p>Pap with Akara</p> <p>7:00a.m - 9:00p.m</p></div>
+              <div class="Meal-Option""><p>Lunch</p> <p>White Rice with Gbadun stew and Moi Moi\Fried rice with Moi Moi</p> <p>12:00p.m - 3:00p.m</p></div>
+              <div class="Meal-Option"><p>Supper</p> <p>Yam with Eggsauce\Plantain with Eggsauce</p> <p>5:00p.m - 8:00p.m</p></div>
+
+              <h2 class="Weekday">Tuesday</h2>
+              <div class="Meal-Option"><p>Breakfast</p> <p>Cornflakes</p> <p>7:00a.m - 10:00a.m</p></div>
+              <div class="Meal-Option"><p>Lunch</p> <p>Poundo Yam\Eba\Semo </p> <p>12:00p.m - 3:00p.m</p></div>
+              <div class="Meal-Option"><p>Supper</p> <p>Rice and Beans with Stew\Plain rice with Stew</p> <p>5:00p.m - 8:00p.m</p></div>
+
+              <h2 class="Weekday">Wednesday</h2>
+              <div class="Meal-Option"><p>Breakfast</p> <p>Pap with Akara</p> <p>7:00a.m - 10:00a.m</p></div>
+              <div class="Meal-Option"><p>Lunch</p> <p>Beans with Bread and Plantain </p> <p>12:00p.m - 3:00p.m</p></div>
+              <div class="Meal-Option"><p>Supper</p> <p>Jollof Spagetthi\Plain Spaghetti</p> <p>5:00p.m - 8:00p.m</p></div>
+
+              <h2 class="Weekday">Thursday</h2>
+              <div class="Meal-Option"><p>Breakfast</p> <p>Pap with Akara</p> <p>7:00a.m - 10:00a.m</p></div>
+              <div class="Meal-Option"><p>Lunch</p> <p>Poundo Yam\Eba\Semo </p> <p>12:00p.m - 3:00p.m</p></div>
+              <div class="Meal-Option"><p>Supper</p> <p>Jollof Rice\Fried Rice</p> <p>5:00p.m - 8:00p.m</p></div>
+
+              <h2 class="Weekday">Friday</h2>
+              <div class="Meal-Option"><p>Breakfast</p> <p>Pap with Akara</p> <p>7:00a.m - 10:00a.m</p></div>
+              <div class="Meal-Option"><p>Lunch</p> <p>Beans with Bread and Plantain </p> <p>12:00p.m - 3:00p.m</p></div>
+              <div class="Meal-Option"><p>Supper</p> <p>Moi Moi with Eko\Yam Pottage</p> <p>5:00p.m - 8:00p.m</p></div>
+
+              <h2 class="Weekday">Saturday</h2>
+              <div class="Meal-Option"><p>Breakfast</p> <p>Pap with Akara</p> <p>7:00a.m - 10:00a.m</p></div>
+              <div class="Meal-Option"><p>Lunch</p> <p>White Rice with Gbadun stew/Jollof Rice</p> <p>12:00p.m - 3:00p.m</p></div>
+              <div class="Meal-Option"><p>Supper</p> <p>Potato with Eggsauce or Stew\Yam with Eggsauce or Stew\White Spaghetti with Eggsauce</p> <p>5:00p.m - 8:00p.m</p></div>
+
+              <h2 class="Weekday">Sunday</h2>
+              <div class="Meal-Option"><p>Breakfast</p> <p>Pap with Akara</p> <p>7:00a.m - 10:00a.m</p></div>
+              <div class="Meal-Option"><p>Lunch</p> <p>Beans with Bread and Plantain </p> <p>12:00p.m - 3:00p.m</p></div>
+              <div class="Meal-Option"><p>Supper</p> <p>Rice and Beans with Stew\Plain rice with Stew</p> <p>5:00p.m - 8:00p.m</p></div>
+
+
+            </div>
+            <div id="special-diet" class="content-section">🥗 Special Diet Options</div>
+            <!-- <div id="" class="content-section">🍳 </div> -->
+            
+        </div>
+  
+    
+        <script src="Timetable.js"></script>
+            
+        </main>
+
+    </div>
+</body>
+
+</html>

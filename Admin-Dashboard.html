@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=outfit@100,200,300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/8d594bdedd.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="Admin-side.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <p>Caf Connect</p>
+        <span>
+          <div class="Notification-Icon">
+            <i
+              class="fa-regular fa-bell fa-shake fa-lg"
+              style="color: #000000"
+            ></i>
+          </div>
+          <div class="Profile-Image">
+            <img
+              src="./Assets/Emergency Passport Semilogo.jpg"
+              alt="Profile Icon"
+            />
+          </div>
+        </span>
+      </header>
+
+      <nav class="side-nav">
+        <ul>
+          <li>
+            <a href="Admin-Dashboard.html" class="active">
+              <div class="Profile-Image">
+                <img
+                  src="./Assets/Emergency Passport Semilogo.jpg"
+                  alt="Profile Icon"
+                />
+              </div>
+              <span>
+                <p>Dashboard</p>
+                <p class="user-name">Overcomer Tawose</p>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="ScanQr.html">
+              <img class="nav-icon" src="./Assets/Icons/scan4.png" alt="icon" />
+              <p>Scan QR Code</p>
+            </a>
+          </li>
+          <li>
+            <a href="Approve-Requests.html">
+              <img
+                class="nav-icon"
+                src="./Assets/Icons/icons8-approve-48.png"
+                alt="icon"
+              />
+              <p>Review Requests</p>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="">
+              <img
+                class="nav-icon"
+                src="./Assets/Icons/icons8-timetable-50.png"
+                alt="icon"
+              />
+              <p>Manage Timetable</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img
+                class="nav-icon"
+                src="./Assets/Icons/icons8-graph-48.png"
+                alt="icon"
+              />
+              <p>Records</p>
+            </a>
+          </li> -->
+          <li class="logout">
+            <a href="Landing-page.html">
+              <img
+                class="nav-icon"
+                src="./Assets/Icons/icons8-logout.gif"
+                alt="icon"
+              />
+              <p>Log out</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="Universal-content"> 
+
+        <div class="welcome-card">
+          <div class="welcome-text">
+              <h2>Welcome, Admin</h2>
+              <p>Tuesday, March 25, 2025 | 2:45 PM</p>
+          </div>
+          </div>
+        <section class="left-section">
+          <div class="info-card-holder">
+            <div class="info-card">
+              <p>Check-Ins Today</p>
+
+              <h2 class="counter" data-target="2234">0</h2>
+            </div>
+            <div class="info-card">
+              <p>Check-Ins This Week</p>
+              <h2 class="counter" data-target="14812">0</h2>
+            </div>
+            <div class="info-card">
+              <p>Check-Ins This Month</p>
+              <h2 class="counter" data-target="52064">0</h2>
+            </div>
+            <div class="info-card">
+              <p>Registered Users</p>
+              <h2 class="counter" data-target="1270">0</h2>
+            </div>
+            <div class="info-card">
+              <p>Issued meal cards</p>
+              <h2 class="counter" data-target="815">0</h2>
+            </div>
+            <div class="info-card">
+              <p>Approval requests</p>
+              <h2 class="counter" data-target="10">0</h2>
+            </div>
+          </div>
+
+          <div class="Shortcut">
+            <h3 >Quick Access</h3>
+          <div class="Quick-scan">
+            <span>Scan QR-Code</span>
+          <button><a href="ScanQr.html">Scan</a></button>
+          </div></div>
+          
+
+           <!-- Recent Activity Card -->
+        <div class="card activity-card">
+          <div class="activity-header">
+              <h3>Recent Activity</h3>
+              <span>Today</span>
+          </div>
+          <div class="activity-list">
+              <div class="activity-item">
+                  <div class="activity-dot dot-success"></div>
+                  <div class="activity-content">
+                      <p>Sarah Johnson checked in</p>
+                      <span>LS Meal Plan</span>
+                  </div>
+                  <div class="activity-time">12:30 PM</div>
+              </div>
+              
+              <div class="activity-item">
+                  <div class="activity-dot dot-warning"></div>
+                  <div class="activity-content">
+                      <p>Payment approved for James Smith</p>
+                      <span>Special Diet meal plan</span>
+                  </div>
+                  <div class="activity-time">11:45 AM</div>
+              </div>
+              
+              <div class="activity-item">
+                  <div class="activity-dot dot-error"></div>
+                  <div class="activity-content">
+                      <p>Insufficient units: Michael Brown</p>
+                      <span>0 units remaining</span>
+                  </div>
+                  <div class="activity-time">11:23 AM</div>
+              </div>
+              
+              <div class="activity-item">
+                  <div class="activity-dot dot-success"></div>
+                  <div class="activity-content">
+                      <p>Emily Davis checked in</p>
+                      <span>BLS Meal Plan</span>
+                  </div>
+                  <div class="activity-time">10:58 AM</div>
+              </div>
+              
+              <div class="activity-item">
+                  <div class="activity-dot dot-success"></div>
+                  <div class="activity-content">
+                      <p>Alex Wilson checked in</p>
+                      <span>BS Meal Plan</span>
+                  </div>
+                  <div class="activity-time">10:45 AM</div>
+              </div>
+              
+              <div class="activity-item">
+                  <div class="activity-dot dot-warning"></div>
+                  <div class="activity-content">
+                      <p>Payment pending for Sofia Garcia</p>
+                      <span>BLS Meal plan - Awaiting approval</span>
+                  </div>
+                  <div class="activity-time">10:32 AM</div>
+              </div>
+          </div>
+      </div>
+        </section>
+
+        <section class="right-section">
+           <!-- Check-in Graph Card -->
+        <div class="card graph-card">
+          <div class="graph-header">
+              <h3>Check-ins</h3>
+              <div class="graph-options">
+                  <button class="active">Day</button>
+                  <button>Week</button>
+                  <button>Month</button>
+              </div>
+          </div>
+          <div class="graph-container">
+              <div class="bar-container">
+                  <div class="bar" style="height: 40%;">
+                      <div class="bar-value">32</div>
+                      <div class="bar-label">7-9 AM</div>
+                  </div>
+                  <div class="bar" style="height: 80%;">
+                      <div class="bar-value">64</div>
+                      <div class="bar-label">9-11 AM</div>
+                  </div>
+                  <div class="bar active" style="height: 100%;">
+                      <div class="bar-value">80</div>
+                      <div class="bar-label">11-1 PM</div>
+                  </div>
+                  <div class="bar" style="height: 60%;">
+                      <div class="bar-value">48</div>
+                      <div class="bar-label">1-3 PM</div>
+                  </div>
+                  <div class="bar" style="height: 20%;">
+                      <div class="bar-value">16</div>
+                      <div class="bar-label">3-5 PM</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+       
+        </section>
+      </main>
+    </div>
+    <script src="counter.js"></script>
+
+    <script>
+      // Simple script to demonstrate the active bar highlight
+      document.querySelectorAll('.bar').forEach(bar => {
+          bar.addEventListener('mouseenter', () => {
+              document.querySelectorAll('.bar').forEach(b => b.classList.remove('active'));
+              bar.classList.add('active');
+          });
+      });
+      
+      // Graph option buttons
+      document.querySelectorAll('.graph-options button').forEach(button => {
+          button.addEventListener('click', () => {
+              document.querySelectorAll('.graph-options button').forEach(b => b.classList.remove('active'));
+              button.classList.add('active');
+              
+              // In a real application, this would trigger different data views
+              // Here we're just showing the interaction
+          });
+      });
+  </script>
+  </body>
+</html>

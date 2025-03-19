@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=outfit@100,200,300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/8d594bdedd.js"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <link rel="stylesheet" href="Admin-side.css" />
+
+    <script src="https://unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <p>Caf Connect</p>
+        <span>
+          <div class="Notification-Icon">
+            <i
+              class="fa-regular fa-bell fa-shake fa-lg"
+              style="color: #000000"
+            ></i>
+          </div>
+          <div class="Profile-Image">
+            <img
+              src="./Assets/Emergency Passport Semilogo.jpg"
+              alt="Profile Icon"
+            />
+          </div>
+        </span>
+      </header>
+
+      <nav class="side-nav">
+        <ul>
+          <li>
+            <a href="Admin-Dashboard.html">
+              <div class="Profile-Image">
+                <img
+                  src="./Assets/Emergency Passport Semilogo.jpg"
+                  alt="Profile Icon"
+                />
+              </div>
+              <span>
+                <p>Dashboard</p>
+                <p class="user-name">Overcomer Tawose</p>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="ScanQr.html" class="active">
+              <img class="nav-icon" src="./Assets/Icons/scan4.png" alt="icon" />
+              <p>Scan QR Code</p>
+            </a>
+          </li>
+          <li>
+            <a href="Approve-Requests.html">
+              <img
+                class="nav-icon"
+                src="./Assets/Icons/icons8-approve-48.png"
+                alt="icon"
+              />
+              <p>Review Requests</p>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="">
+              <img
+                class="nav-icon"
+                src="./Assets/Icons/icons8-timetable-50.png"
+                alt="icon"
+              />
+              <p>Manage Timetable</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img
+                class="nav-icon"
+                src="./Assets/Icons/icons8-graph-48.png"
+                alt="icon"
+              />
+              <p>Records</p>
+            </a>
+          </li> -->
+          <li class="logout">
+            <a href="Landing-page.html">
+              <img
+                class="nav-icon"
+                src="./Assets/Icons/icons8-logout.gif"
+                alt="icon"
+              />
+              <p>Log out</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="Universal-content">
+        <div class="scan-page-container">
+            <div class="Scan-page-header">  
+                <h2>Scan QR Code</h2>
+                <div id="time">00:00:00</div>
+            </div>
+        
+            <div class="scanner-container">
+                <div class="scanner-wrapper">
+                    <div class="scanner-header">
+                        <h3>Scanner</h3>
+                        <span id="camera-status">Camera Off</span>
+                    </div>
+                    <video id="qr-video" playsinline></video>
+                    <div class="controls">
+                        <button id="start-button" class="btn-primary">New Scan</button>
+                        <button id="stop-button" class="btn-secondary" disabled>Stop Scan</button>
+                    </div>
+                    <div id="scan-status" class="status status-ready">Ready to scan</div>
+                </div>
+                
+                <div class="student-info">
+                    <h2>Student Information</h2>
+                    <div class="student-info-content">
+                        <div id="no-data" class="text-center">
+                            <p>No student scanned yet</p>
+                        </div>
+                        <div id="loading" class="hidden">
+                            <div class="loader"></div>
+                            <p class="text-center">Loading student data...</p>
+                        </div>
+                        <div id="student-data" class="hidden">
+                            <div class="student-details">
+                                <img id="student-photo" class="student-photo" src="./Assets/Remo.jpg" alt="Student Photo">
+                                <div class="student-meta">
+                                    <div id="student-name" class="student-name">John Doe</div>
+                                    <div id="student-id" class="student-id">Matric Number: 12345678</div>
+                                </div>
+                            </div>
+                            
+                            <div class="data-row">
+                                <div class="data-label">Department:</div>
+                                <div id="department" class="data-value">Computer Science</div>
+                            </div>
+                            
+                            <div class="data-row">
+                                <div class="data-label">Year Level:</div>
+                                <div id="year-level" class="data-value">3rd Year</div>
+                            </div>
+                            
+                            <div class="data-row">
+                                <div class="data-label">Card Status:</div>
+                                <div id="status" class="data-value">Enrolled</div>
+                            </div>
+                            
+                            <div class="data-row">
+                                <div class="data-label">Meal:</div>
+                                <div id="event" class="data-value">Campus Orientation</div>
+                            </div>
+                            
+                            <div class="data-row">
+                                <div class="data-label">Check-in Time:</div>
+                                <div id="checkin-time" class="data-value">March 17, 2025 10:30 AM</div>
+                            </div>
+                            
+                            <div class="data-row">
+                                <div class="data-label">Meal Plan:</div>
+                                <div id="meal-plan" class="data-value">Standard Meal Plan</div> <!-- Added meal plan display -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="history">
+                <div class="history-header">
+                    <h2>Scan History</h2>
+                    <button id="clear-history" class="btn-secondary">Clear History</button>
+                </div>
+                <div id="history-list" class="history-list">
+                    <!-- Scan history will be populated here -->
+                </div>
+            </div>
+        </div>
+        
+        <div id="success-animation" class="success-animation">
+            <div class="success-icon">✓</div>
+        </div>
+      </main>
+    </div>    
+           
+
+    <script src="scanQr.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://api.fontshare.com/v2/css?f[]=outfit@100,200,300,400,500,600,700,800&display=swap"
+    />
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: "Outfit", sans-serif;
+      }
+
+      .landing-page {
+        background-image: url("./Assets/pexels-tivasee-17374727-8349754.jpg"); /* Replace with your image */
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+      }
+
+      .overlay {
+        background: rgba(0, 0, 0, 0.7); /* Darkened background */
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding: 20px; */
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+      }
+
+      .second-overlay {
+        padding:   70px 0px;
+        /* margin-top: -80px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border: 1px solid; */
+        text-align: center;
+        background: rgba(0, 0, 0, 0.3); /*Darkened background*/
+        width: 80%;
+        border-radius: 25px;
+
+      }
+
+      h1 {
+        font-size: 60px;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+        margin-top: 0px;
+        width: 80%;
+        object-fit: cover;
+        text-align: center;
+      }
+
+      p {
+        color: rgb(230, 226, 226);
+        font-size: 22px;
+        line-height: 0px;
+      }
+
+      .login-options {
+        margin-top: 40px ;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        padding: 0px 10px;
+        border-radius: 10px;
+        width: 40%;
+        box-sizing: border-box;
+      }
+
+      .btn {
+        display: inline-block;
+        box-sizing: border-box;
+        font-size: 17px;
+        width: 250px;
+        padding: 10px 10px;
+        background:#cb570e;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+     
+
+      .btn:hover {
+        background-color: #ff7d12 ; /* Hover effect */
+        color: black;
+        transform: translateY(-1.5px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="landing-page">
+      <div class="overlay">
+        <div class="second-overlay">
+          <h1>Welcome to Caf Connect</h1>
+          <p>Your gateway to a world of Seamless Accessibility and Delivery...</p>
+          <p>Redifining your Cafeteria Experience.</p>
+          <div class="login-options">
+            <a href="Student_Registration.html" class="btn">Student Login</a>
+            <a href="Admin_Registration.html" class="btn">Admin Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

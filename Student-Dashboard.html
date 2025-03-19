@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User-Dashboard</title>
+    <link rel="stylesheet" href="Styling.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=outfit@100,200,300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/8d594bdedd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <p>Caf Connect</p>
+        <span>
+          <div class="Notification-Icon">
+            <i class="fa-regular fa-bell fa-shake fa-lg" style="color: #000000;"></i>
+          </div>
+          <div class="Profile-Image">
+            <img
+              src="./Assets/Emergency Passport Semilogo.jpg"
+              alt="Profile Icon"
+            />
+          </div>
+        </span>
+      </header>
+ 
+      <nav class="side-nav">
+        <ul>
+          <li>
+            <a href="Student-Dashboard.html" class="active">
+              <div class="Profile-Image">
+                <img
+                  src="./Assets/Emergency Passport Semilogo.jpg"
+                  alt="Profile Icon"
+                />
+              </div>
+              <span>
+                <p>Dashboard</p>
+                <p class="user-name">Overcomer Tawose</p>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="Qr-Code.html">
+              <img
+                class="nav-icon"
+                src="./Assets/Icons/Qr code.png"
+                alt="icon"
+              />
+              <p>Generate QR Code</p>
+            </a>
+          </li>
+          <li>
+            <a href="meal-card.html">
+              <img class="nav-icon" src="./Assets/Icons/card.png" alt="icon" />
+              <p>Meal Card</p>
+            </a>
+          </li>
+          <li>
+            <a href="Timetable.html">
+              <img
+                class="nav-icon"
+                src="./Assets/Icons/18987773.png"
+                alt="icon"
+              />
+              <p>Timetable</p>
+            </a>
+          </li>
+          <li>
+            <a href="History.html">
+              <img
+                class="nav-icon"
+                src="./Assets/Icons/History1.png"
+                alt="icon"
+              />
+              <p>History</p>
+            </a>
+          </li>
+          <li class="logout">
+            <a href="Landing-page.html">
+            
+              <img
+              class="nav-icon"
+              src="./Assets/Icons/icons8-logout.gif"
+              alt="icon"
+            />
+              <p>Log out</p>
+            </a>
+          </li>
+        </ul>
+      </nav> 
+
+      <main class="Universal-content">
+        <section class="Dashboard-Part1">
+          <div class="welcome-card">
+            <div class="welcome-text">
+                <h2>Welcome, Overcomer</h2>
+                <p>Tuesday, March 25, 2025 | 2:45 PM</p>
+            </div>
+            </div>
+          <h3 class="Check-in-Info-text">Check-in-Information</h3>
+        </section>
+        <section class="Check-in-Info">
+          <div>
+            <h2 class="counter" data-target="50">0</h2>
+            <p>Available Units</p>
+          </div>
+          <div>
+            <h2 class="counter" data-target="25" style="color: #0d6da4;" >0</h2>
+            <p>Check-ins</p>
+           
+          </div>
+          <!--  rgb(6, 178, 6) -->
+          <div>
+            <h2 class="counter" data-target="8" style="color: #db1212;">0</h2>
+            <p>Missed Check-ins</p>
+          </div>
+          <div>
+            <h2>BLS</h2>
+            <p>Registered Plan</p>
+          </div>
+        </section>
+        <h3 class="Quick-access-text">Quick Access</h3>
+        <div class="Quick-access">
+          <span>Generate QR-Code</span>
+          <button><a href="Qr-Code.html">Generate</a></button>
+        </div>
+
+        <h3 class="">Today's Meal</h3>
+        <div class="Meal-Box">
+          <div class="Balanced-Diet">
+            <img class="Meal-Time-Image" src="./Assets/pexels-solodsha-8105114.jpg" alt="Breakfast Image" />
+            <div>
+              <span class="meal-info-text"
+                ><p>Breakfast</p>
+                <p class="meal-time">7:00a.m - 10:00a.m</p
+              ></span>
+              <span><a href="Timetable.html">></a></span>
+            </div>
+          </div>
+          <div class="Balanced-Diet">
+            <img class="Meal-Time-Image" src="./Assets/pexels-photo-9392999.jpeg" alt="Lunch Image" />
+            <div>
+              <span class="meal-info-text"
+                ><p>Lunch</p>
+                <p class="meal-time">12:00p.m - 3:00pm</p
+              ></span>
+              <span><a href="Timetable.html">></a></span>
+            </div>
+          </div>
+          <div class="Balanced-Diet">
+            <img class="Meal-Time-Image" src="./Assets/pexels-photo-4223943.jpeg" alt="Supper Image" />
+            <div>
+              <span class="meal-info-text"
+                ><p>Supper</p>
+                <p class="meal-time">5:00p.m - 8:00p.m</p
+              ></span>
+             <span><a href="Timetable.html">></a></span>
+            </div>
+          </div>
+        </div>
+      </main>
+     
+    </div>
+    <script src="counter.js"></script>
+
+    <!-- Responsiveness -->
+      <!-- <nav class="side-nav">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown()">Menu</button>
+            <div class="dropdown-content" id="dropdown-content">
+               
+            </div>
+        </div>
+    </nav> -->
+    <!-- <script>
+      function toggleDropdown() {
+          const dropdownContent = document.getElementById("dropdown-content");
+          dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+              const dropdowns = document.getElementsByClassName("dropdown-content");
+              for (let i = 0; i < dropdowns.length; i++) {
+                  const openDropdown = dropdowns[i];
+                  if (openDropdown.style.display === "block") {
+                      openDropdown.style.display = "none";
+                  }
+              }
+          }
+      }
+  </script> -->
+  </body>
+</html>

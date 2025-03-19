@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Card</title>
+    <link rel="stylesheet" href="Styling.css" />
+    <link href="https://api.fontshare.com/v2/css?f[]=outfit@100,200,300,400,500,600,700,800&display=swap"
+        rel="stylesheet" />
+
+        <script
+        src="https://kit.fontawesome.com/8d594bdedd.js"
+        crossorigin="anonymous"
+      ></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <p>Caf Connect</p>
+            <span>
+              <div class="Notification-Icon">
+                <img src="./Assets/Icons/notif.png" alt="Notification Icon" />
+              </div>
+              <div class="Profile-Image">
+                <img
+                  src="./Assets/Emergency Passport Semilogo.jpg"
+                  alt="Profile Icon"
+                />
+              </div>
+            </span>
+          </header>
+
+        <nav class="side-nav">
+            <ul>
+              <li>
+                <a href="Student-Dashboard.html" >
+                  <div class="Profile-Image">
+                    <img
+                      src="./Assets/Emergency Passport Semilogo.jpg"
+                      alt="Profile Icon"
+                    />
+                  </div>
+                  <span>
+                    <p>Dashboard</p>
+                    <p class="user-name">Overcomer Tawose</p>
+                  </span>
+                </a>
+              </li>
+    
+              <li>
+                <a href="Qr-Code.html">
+                  <img
+                    class="nav-icon"
+                    src="./Assets/Icons/Qr code.png"
+                    alt="icon"
+                  />
+                  <p>QR Code</p>
+                </a>
+              </li>
+              <li>
+                <a href="meal-card.html" class="active">
+                  <img class="nav-icon" src="./Assets/Icons/card.png" alt="icon" />
+                  <p>Meal Card</p>
+                </a>
+              </li>
+              <li>
+                <a href="Timetable.html">
+                  <img
+                    class="nav-icon"
+                    src="./Assets/Icons/18987773.png"
+                    alt="icon"
+                  />
+                  <p>Timetable</p>
+                </a>
+              </li>
+              <li>
+                <a href="History.html">
+                  <img
+                    class="nav-icon"
+                    src="./Assets/Icons/History1.png"
+                    alt="icon"
+                  />
+                  <p>History</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i
+                    class="nav-icon"
+                    class="fa-solid fa-arrow-right-from-bracket"
+                  ></i>
+                  <p>Log out</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+        <main class="Universal-content">
+          <div class="meal-card-content">
+   
+              <h2>Register Meal Plan</h2>
+   
+              <div class="tabs">
+                <button class="tab-btn active" onclick="openTab('register')">Register Meal Plan</button>
+                <button class="tab-btn" onclick="openTab('update')">Update Meal Card</button>
+                <button class="tab-btn" onclick="openTab('view')">View Meal Card</button>
+            </div>
+    
+            <!-- Register Meal Plan Section -->
+            <div id="register" class="tab-content active">
+                <p>Select a meal plan and upload your payment receipt to complete registration.</p>
+                <button id="open-form">Register Meal Plan</button>
+            </div>
+    
+            <!-- Update Meal Card Section -->
+            <div id="update" class="tab-content">
+                <p>Edit or update your meal card details.</p>
+                <button id="update-meal-card">Update Meal Card</button>
+            </div>
+    
+            <!-- View Meal Card Section -->
+            <div id="view" class="tab-content">
+
+              <h2>Meal Card</h2>
+
+              <div class="meal-plan-container">
+                <img src="./Assets/pexels-photo-9392999.jpeg" alt="">
+                <div >
+                    <span>
+                        <h4>Meal Plan - Lunch & Supper</h4>
+                        <p>Active</p>
+                        <p>Valid till May 30, 2025</p>
+                    </span>
+                    <button>Edit</button>
+                </div>
+               </div>
+                <!-- <div class="card">
+                    <h3>Meal Card Details</h3>
+                    <p><strong>Name:</strong> John Doe</p>
+                    <p><strong>Matric Number:</strong> U20231234</p>
+                    <p><strong>Meal Plan:</strong> Premium</p>
+                    <p><strong>Balance:</strong> $50.00</p> -->
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="modal" id="register-modal">
+          <div class="modal-content">
+              <div class="close">&times;</div>
+              <h3>Register Meal Plan</h3><br>
+              <label>Choose Meal Plan:</label>
+              <select id="meal-plan">
+                  <option value="Breakfast-Lunch-Supper">Breakfast-Lunch-Supper</option>
+                  <option value="Breakfast-Lunch">Breakfast-Lunch</option>
+                  <option value="Breakfast-Supper">Breakfast-Supper</option>
+                  <option value="Lunch-Supper">Lunch-Supper</option>
+              </select> <br>
+  
+              <label>Upload Receipt:</label>
+              <input type="file" id="receipt-upload"><br>
+              
+              <button id="submit-registration">Submit</button>
+          </div>
+      </div>
+          
+    
+        
+     </main>
+
+    </div>
+    <script src="Register-script.js"></script>
+</body>
+
+</html>

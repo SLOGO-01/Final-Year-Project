@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Meal Card</title>
+    <link rel="stylesheet" href="mealChat.css">
+    <link
+    href="https://api.fontshare.com/v2/css?f[]=outfit@100,200,300,400,500,600,700,800&display=swap"
+    rel="stylesheet"
+/>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Student Dashboard -->
+        <div class="card student">
+            <h2>Student Meal Card</h2>
+            <div class="meal-card">
+                <p>Balance: <span id="balance">$50.00</span></p>
+                <button id="toggle-card">Deactivate Card</button>
+            </div>
+            
+            <h3>Upload Receipt</h3>
+            <input type="file" id="receipt-upload">
+            <button id="submit-receipt">Submit</button>
+            <p id="receipt-status">Receipt Status: Pending</p>
+
+            <h3>Transaction History</h3>
+            <ul id="transaction-history">
+                <li>Meal Purchase - $5.00</li>
+                <li>Credit Loaded - $20.00</li>
+            </ul>
+        </div>
+
+        <!-- Admin Panel -->
+        <div class="card admin">
+            <h2>Admin Panel</h2>
+            <h3>Review Receipts</h3>
+            <div class="receipt-review">
+                <p>Student: John Doe</p>
+                <button class="approve">Approve</button>
+                <button class="decline">Decline</button>
+            </div>
+
+            <h3>Load Credits</h3>
+            <input type="text" placeholder="Enter Student ID">
+            <input type="number" placeholder="Enter Amount">
+            <button id="load-credit">Load Credit</button>
+        </div>
+    </div>
+
+</body>
+</html>

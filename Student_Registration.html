@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In / Sign Up</title>
+    <link rel="stylesheet" href="Registration.css" />
+
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=outfit@100,200,300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <p>Caf Connect</p>
+      <img src="./Assets/Icons/help button3.png" alt="" />
+    </header>
+
+    <section class="content">
+      <div class="container" id="main">
+        <div class="sign-up">
+          <form action="#">
+            <h3>Create Account</h3>
+            <label for="">First Name</label>
+            <input class="Block-input" type="text" placeholder="John" />
+
+            <label for="">Last Name</label>
+            <input class="Block-input" type="text" placeholder="Doe" />
+
+            <label for="">Student E-mail</label>
+            <input
+              class="Block-input"
+              type="text"
+              placeholder="salami1234@student.babcock.edu.ng"
+            />
+
+            <label for="">Matric Number</label>
+            <input class="Block-input" type="text" placeholder="25/1000" />
+
+            <label for="">Password</label>
+            <input class="Block-input" type="password" placeholder="********" />
+
+            <button>Sign Up</button>
+          </form>
+        </div>
+        <div class="sign-in">
+          <form action="Student-Dashboard.html">
+            <h3>Sign In</h3>
+
+            <label for="Matric_Number">Matric Number</label>
+        <input 
+        class="Block-input" 
+        type="text" 
+        placeholder="25/1000" />
+
+            <label for="Student_E-mail">Student E-mail</label>
+            <input
+              class="Block-input"
+              type="email"
+              id="email"
+              placeholder="salami1234@student.babcock.edu.ng"
+            />
+
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              class="Block-input"
+              placeholder="********"
+       
+            />
+
+            <a href="#">Forgot your Password?</a>
+            <button>Sign In</button>
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-left">
+              <h3>Welcome Back, Scholar!</h3>
+              <p>
+                To stay connected with us, please login with your personal
+                information
+              </p>
+              <button id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-right">
+              <h3>Hello, Are you New here?</h3>
+              <p>
+                Enter your personal details and get started with your digital
+                dining experience!
+              </p>
+              <button id="signUp">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+        const signUpButton = document.getElementById('signUp');
+		const signInButton = document.getElementById('signIn');
+		const main = document.getElementById('main');
+
+		signUpButton.addEventListener('click', () => {
+			main.classList.add("right-panel-active");
+		});
+		signInButton.addEventListener('click', () => {
+			main.classList.remove("right-panel-active");
+		});
+    </script>
+  </body>
+</html>

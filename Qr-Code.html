@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR-Code</title>
+    <link rel="stylesheet" href="Styling.css" />
+    <link rel="stylesheet" href="Qr.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=outfit@100,200,300,400,500,600,700,800&display=swap"
+        rel="stylesheet" />
+
+        <script
+        src="https://kit.fontawesome.com/8d594bdedd.js"
+        crossorigin="anonymous"
+      ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <p>Caf Connect</p>
+            <span>
+              <div class="Notification-Icon">
+                <img src="./Assets/Icons/notif.png" alt="Notification Icon" />
+              </div>
+              <div class="Profile-Image">
+                <img
+                  src="./Assets/Emergency Passport Semilogo.jpg"
+                  alt="Profile Icon"
+                />
+              </div>
+            </span>
+          </header>
+          
+        <nav class="side-nav">
+            <ul>
+              <li>
+                <a href="Student-Dashboard.html" >
+                  <div class="Profile-Image">
+                    <img
+                      src="./Assets/Emergency Passport Semilogo.jpg"
+                      alt="Profile Icon"
+                    />
+                  </div>
+                  <span>
+                    <p>Dashboard</p>
+                    <p class="user-name">Overcomer Tawose</p>
+                  </span>
+                </a>
+              </li>
+    
+              <li>
+                <a href="Qr-Code.html" class="active">
+                  <img
+                    class="nav-icon"
+                    src="./Assets/Icons/Qr code.png"
+                    alt="icon"
+                  />
+                  <p>Generate QR Code</p>
+                </a>
+              </li>
+              <li>
+                <a href="meal-card.html">
+                  <img class="nav-icon" src="./Assets/Icons/card.png" alt="icon" />
+                  <p>Meal Card</p>
+                </a>
+              </li>
+              <li>
+                <a href="Timetable.html">
+                  <img
+                    class="nav-icon"
+                    src="./Assets/Icons/18987773.png"
+                    alt="icon"
+                  />
+                  <p>Timetable</p>
+                </a>
+              </li>
+              <li>
+                <a href="History.html">
+                  <img
+                    class="nav-icon"
+                    src="./Assets/Icons/History1.png"
+                    alt="icon"
+                  />
+                  <p>History</p>
+                </a>
+              </li>
+              <li>
+                <a href="Landing-page.html">
+                  <img class="nav-icon" src="./Assets/Icons/icons8-logout-96.png" alt="">
+                  <p>Log out</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+        <main class="content">
+
+       
+    <div class="contain">
+        <h2>Generate Your Meal Card QR Code</h2>
+        <p>Use this QR code for quick and Secure Cafeteria Check-ins</p>
+
+        <!-- Student Profile -->
+        <div class="profile-card">
+            <img src="Assets/Emergency Passport Semilogo.jpg" alt="Student Image" id="profile-img">
+            <h3 id="student-name">Overcomer Tawose</h3>
+            <p><strong>Matric Number:</strong> <span id="matric-number">21/2345</span></p>
+            <p><strong>Meal Plan:</strong> <span id="meal-plan">BLS</span></p>
+            <p><strong>Course of Study:</strong> <span id="course">Computer Science</span></p>
+        </div>
+
+        <!-- QR Code Section -->
+        <div id="qr-container">
+            <div id="qrcode"></div>
+        </div>
+
+        <button id="generate-qr">Generate QR Code</button>
+        <button id="download-qr" style="display: none;">Download QR Code</button>
+        <p id="expiry-info" style="display: none; color: red;"></p>
+    </div>
+
+        </main>
+
+    </div>
+    <script src="QrScript.js"></script>
+</body>
+
+</html>
